@@ -21,7 +21,12 @@ li {
 	padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	padding: 0;
 	margin: 0;
 	font-size: inherit;
@@ -32,6 +37,10 @@ body {
 	overflow-x: hidden;
 	position: relative;
 	color: #fff;
+	font-size: 17px;
+	line-height: 26px;
+
+	@extend %ub-light;
 }
 
 .container {
@@ -42,7 +51,7 @@ body {
 
 .page-section {
 	min-height: 100vh;
-	background-image:  url(../images/page-bg.jpg);
+	background-image: url(../images/page-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
@@ -51,7 +60,12 @@ body {
 }
 
 .title {
+	@extend %ral-regular;
 
+	font-size: 44px;
+	line-height: 53px;
+	padding-left: 25px;
+	margin-bottom: 55px;
 }
 
 .scroll-btn {
